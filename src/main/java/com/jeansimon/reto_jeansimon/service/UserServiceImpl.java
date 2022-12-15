@@ -14,10 +14,9 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository repository;
 
-
     @Override
-    public Optional<User> findIdInstitute(Long id) {
-        return repository.findById(id);
+    public Optional<User> findCodigoUnico(Long codigoUnico) {
+        return repository.findById(codigoUnico);
     }
 
     @Override

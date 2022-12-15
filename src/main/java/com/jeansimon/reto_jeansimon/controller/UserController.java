@@ -15,9 +15,9 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/{id}")
-    Optional<User> findIdInstitute(@PathVariable Long id) {
-        return userService.findIdInstitute(id);
+    @GetMapping("/{codigoUnico}")
+    Optional<User> findCodigoUnico(@PathVariable Long codigoUnico) {
+        return userService.findCodigoUnico(codigoUnico);
     }
 
     @GetMapping

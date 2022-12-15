@@ -7,7 +7,8 @@ import java.util.Optional;
 
 public interface UserService {
 
-    Optional<User> findIdInstitute(Long id);
+    Optional<User> findCodigoUnico(Long codigoUnico);
+
     List<User> findAll();
 
     User create(User user);

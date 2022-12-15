@@ -1,4 +1,4 @@
-FROM java:openjdk-8-jre
+FROM openjdk:20-ea-17-jdk
 RUN useradd -ms /bin/bash jean
 USER jean
 WORKDIR /home/jean
